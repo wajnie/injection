@@ -1,198 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
-
-:root {
-   --font-display: 'Nunito Sans', sans-serif !important;
-   --font-body: 'Nunito Sans', sans-serif !important;
+/*ONLY-BACKGROUND*/
+ .background,
+ .clash-missed-lockin-modal,
+ .clash-root-background-landing,
+ .clash-root-background,
+ .clash-aram-intro-modal,
+ .clash-tab-team-background,
+ .clash-tab-bracket-background,
+ .collections-application,
+ .career-postgame-progression-component,
+ .loot-backdrop,
+ .loot-contents,
+ .lol-social-identity,
+ .lol-social-sidebar,
+ .loot-backdrop.background-static,
+ .lol-social-lower-pane-container,
+ .match-details-root,
+ .mission-tracker-component,
+ .mission-tray-header,
+ .profile-main-match-history,
+ .postgame-root-component,
+ .postgame-contents,
+ .postgame-root-component,
+ .postgame-application,
+ .postgame-component,
+ .postgame-champion-background-wrapper,
+ .postgame-header-section,
+ .progression-tab,
+ .prompted-voting-component,
+ .rcp-fe-lol-tft-application-background,
+ .rcp-fe-viewport-sidebar,
+ .rcp-fe-lol-tft-hub,
+ .store-loading,
+ .store-backdrop,
+ .stats-backdrop,
+ .tournament-scouting,
+ .tft-hub-footer-bg,
+ .yourshop-root,
+ .tft-player-card,
+ .player-party-controls,
+ .runes-recommender-root,
+ .lol-perks-construct-minspec-component,
+ .rcp-fe-lol-game-in-progress,
+ .lol-loading-screen-container,
+ .lol-loading-screen-default-state,
+ .match-history-main,
+ #rcp-fe-viewport-root #rcp-fe-lol-navigation-app, 
+ lol-social-roster-group .group-header{
+  background: black !important;
 }
 
-.clash-root-background-landing,
-.hold-leave,
-.collections-application,
-.clash-root-background-landing,
-.__rcp-fe-lol-store,
-.loot-backdrop.background-static,
-.personalized-offers-root,
-.parties-view,
-.yourshop-root,
-.clash-root-background,
-.clash-root-background-landing,
-.store-backdrop,
-.challenges-collection-component > .background,
-.loot-backdrop .lol-uikit-video-content,
-.rcp-fe-lol-event-shop-application,
-.champ-select-bg-darken,
-.rcp-fe-lol-game-in-progress,
-.postgame-background-image,
-.clash-root-background-landing,
-.clash-aram-intro-modal,
-.clash-root-background,
-.postgame-champion-background-wrapper,
-.stats-backdrop,
-.rcp-fe-viewport-sidebar,
-.loot-loading-screen,
-.lol-social-sidebar,
-.cdp-backdrop.progression:after,
-.cdp-backdrop-component,
-.cdp-backdrop:after,
-.clash-logo-border,
-.group-header,
-.ember-text-field,
-.parties-background-mask,
-.lol-loading-screen-container.lol-loading-screen-default-state,
-.match-details-root,
-#ember6936,
-.champion-splash-background,
-#ember7563,
-.loading-tab::after,
-.loot-milestones-tracker-wrapper,
-.rcp-fe-lol-tft-application-background,
-.tft-home-footer-bg,
-.tft-hub-footer-bg,
-.event-shop-index,
-.event-shop-page-header,
-.event-shop-progression,
-.event-shop-progression-info,
-.event-shop-reward-track-wrapper,
-.event-shop-token-shop-header {
-   background-color: transparent !important;
-   background: transparent !important;
-   backdrop-filter: none !important;
-   filter: none !important;
+/*OTHER-STUFF*/
+ .navbar-blur{
+  background: black !important;
+  backdrop-filter: none !important;
+ }
+ .ranked-intro-background {
+  display: none !important;
+ }
+ .lobby-header-overlay{
+  background: transparent !important;
+ }
+ .right-nav-vertical-rule{
+  background: transparent !important;
+ }
+ .parties-view .parties-background {
+  opacity:0 !important;
+ }
+ .rcp-fe-lol-navigation.main-nav-bar {
+  height: 76px !important;
+ }
+ .lol-loading-screen-container.lol-loading-screen-default-state .lol-loading-screen-spinner {
+	display: none !important;
+ }
+ .loading-tab::after {
+	background-image:none !important;
+ }
+ .parallax-layer-container .parallax-background-layer{
+  background-image: none !important;
+ }
+ .uikit-background-switcher .lol-uikit-background-switcher-image.transition.fade {
+	animation: unset !important;
+ }
+ .champion-select .quit-button {
+  width: 115px;
 }
 
-/* body {
-   background-color: rgba(255, 255, 255, 0.4) !important;
-   background: rgba(255, 255, 255, 0.1) !important;
-} */
-
-body,
-html {
-   background-color: transparent !important;
-   background: transparent !important;
-   backdrop-filter: none !important;
-   filter: none !important;
-}
-
-/* Extra Shidd */
-
-.champion-thumbnail,
-.champion-image-container,
-.champion-mastery-info {
-   border-radius: 2rem 0rem 2rem !important;
-   border: none !important;
-}
-
-.champion-mastery-info {
-   top: 10.4rem !important;
-}
-
-.cdp-progression-header {
-   border: none !important;
-}
-
-.cdp-backdrop-img {
-   opacity: 0.4 !important;
-}
-
-.group-separator {
-   display: none !important;
-   border: none !important;
-}
-
-.ember-text-field {
-   padding-left: 5px !important;
-}
-
-.navigation-root-component {
-   border-bottom: none !important;
-}
-
-.lol-uikit-background-switcher-image,
-.timer-status::before {
-   display: none !important;
-}
-
-
-.owned-filter {
-   border: none !important;
-}
-
-
-
-.lol-loading-screen-container.lol-loading-screen-default-state
-   .lol-loading-screen-spinner {
-   display: none;
-}
-
-.lol-loading-screen-status-text {
-   text-indent: -9999px;
-}
-.lol-loading-screen-container.lol-loading-screen-default-state
-   .lol-loading-screen-progress-bar-container {
-   width: 1000px;
-}
-
-.lol-loading-screen-container.lol-loading-screen-default-state
-   .lol-loading-screen-progress-bar-progress {
-   background-image: linear-gradient(
-      to right,
-      #f1ede4 10%,
-      #1815f0 70%,
-      #db0824 125%
-   );
-}
-
-.lol-social-identity .lower-details lol-social-availability-hitbox {
-   margin: 3px 5px 0 1.5px !important;
-}
-
-div[data-screen-name='rcp-fe-lol-navigation-screen'] {
-   border-top: none !important;
-}
-
-.lobby-header-overlay,
-.loading-content,
-.bottom-gradient,
-.event-shop-page-header-vertical-divider {
-   display: none !important;
-}
-
-.navbar-blur {
-   background: transparent !important;
-}
-
-#rcp-fe-viewport-root {
-   border: none !important;
-}
-
-.event-shop-index-header,
-.event-shop-progression {
-   box-shadow: none !important;
-}
-
-.event-shop-token-shop-header,
-.event-shop-page-header,
-.event-shop-progression-info {
-   box-shadow: none !important;
-   border: none !important;
-}
-
-.champion-select,
-.champion-select, .uikit-background-switcher {
-   background: none !important;
-}
-
-.event-shop-category-nav-bar,
-.event-shop-offer-card,
-.event-shop-reward-track-wrapper {
-   border: none !important;
-   background: none !important;
-}
-
-#background-ambient {
-   display: none !important;
-}
-
-.v2-parties-invite-info-panel {
-  background: rgb(0 0 0 / 18%) !important;
+/*EVENT-SHOP*/
+ .rcp-fe-lol-event-shop-application
+ .event-shop-progression-info
+ .event-shop-offer-card
+ .event-shop-token-shop
+ .event-shop-page-header
+ .event-shop-token-shop-header
+ .event-shop-category-nav-bar
+ .event-shop-reward-track-wrapper{
+  background: black !important;
 }
