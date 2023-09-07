@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>wajnie.net - Home</title>
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/connect.css">
+    <link rel="stylesheet" href="styles/project/projects.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="snapper">
+      <!-- LANDING SECTION -->
+      <div id="particles-js">
+        <!-- particles.js container -->
+        <div class="landingPageContainer">
+          <div>
+            <span style="color: #21F7C0;">wajnie</span>
+            <div class="LandingSkills">
+              <section class="nerdy-pen">
+                <h1 class="nerdy-pen__text">
+                  <span class="txt-rotate">|</span>
+                  <span class="txt-rotate" data-period="1000" data-rotate='[ "github.com/wajnie", "wajnie#0000", "github.com/wajnie"]'></span>
+                  <span class="txt-rotate">|</span>
+                </h1>
+              </section>
+            </div>
+          </div>
+          <div class="bottomTray">
+            <a href="#2">
+              <div class="glassTray"> Down </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="2" class="aboutMeSection">
+        <div class="aboutMeSectionIndiv">
+          <div class="hidden aboutMeSectionInner">
+            <div class="aboutSectionHeading">about me</div>
+          </div>
+          <div class="aboutInfoContainer">
+            <div class="hidden2 aboutMeInfo">
+              <h1> I am wajnie </h1>
+              <!-- introduction of a
+web developer -->
+              <p> in construction... </p>
+              <p>
+              <h3 style="color:#21f7c0">some links:</h3>
+              <ul class="ProfileList"> I like simple geometry like <a style="color:#21f7c0" href="http://wajnie.net/u/2308/uDwS.html"> this one </a>. <li>
+                  <a href="https://github.com/wajnie" target="label">Github</a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener
+                            noreferrer" href="http://wajnie.net" target="label">Home</a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener
+                            noreferrer" href="http://wajnie.net/upload" target="label">File Uploader (yes, you need a password)</a>
+                </li>
+                </p>
+              </ul>
+            </div>
+            <div class="aboutImgCont  hidden3">
+              <img class="aboutImg" src="https://media.discordapp.net/attachments/565550638088323094/601530204585984008/wajnie.png?width=676&height=676" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <!--
+stats.js lib -->
+      <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      <script src="./particle.js"></script>
+      <script src="./text.js"></script>
+      <script>
+        // window.onscroll = function () { myFunction() };
+        function myFunction() {
+          var elements;
+          var elements2;
+          var elements3;
+          var elements4;
+          var windowHeight;
+
+          function init() {
+            elements = document.querySelectorAll('.hidden');
+            elements2 = document.querySelectorAll('.hidden2');
+            elements3 = document.querySelectorAll('.hidden3');
+            elements4 = document.querySelectorAll('.hidden4');
+            windowHeight = window.innerHeight;
+          }
+
+          function checkPosition() {
+            for (var i = 0; i < elements.length; i++) {
+              var element1 = elements[i];
+              var element2 = elements2[i];
+              var element3 = elements3[i];
+              var element4 = elements4[i];
+              var positionFromTop = elements[i].getBoundingClientRect().top;
+              var positionFromTop2 = elements2[i].getBoundingClientRect().top;
+              if (positionFromTop - windowHeight <= 0) {
+                element1.classList.add('fade-in-element');
+                element1.classList.remove('hidden');
+              }
+              if (positionFromTop2 - windowHeight <= 0) {
+                element2.classList.add('fade-in-element2');
+                element2.classList.remove('hidden2');
+                element3.classList.add('fade-in-element3');
+                element3.classList.remove('hidden3');
+                element4.classList.add('fade-in-element4');
+                element4.classList.remove('hidden4');
+              }
+            }
+          }
+
+          function checkPosition2() {
+            for (var i = 0; i < elements4.length; i++) {
+              var positionFromTop4 = elements4[i].getBoundingClientRect().top;
+              if (positionFromTo4 - windowHeight <= 0) {}
+            }
+          }
+          window.addEventListener('scroll', checkPosition);
+          window.addEventListener('scroll', checkPosition2);
+          window.addEventListener('resize', init);
+          init();
+          checkPosition();
+        }
+        myFunction()
+
+        function f0() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/exp.png"
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle2")
+        }
+
+        function f1() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/vysion.jpg"
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle1");
+        }
+
+        function f2() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/ideoholics.png"
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle1");
+        }
+
+        function f3() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/nt.jpg"
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.add("mystyle1");
+        }
+      </script>
+  </body>
+</html> root@ip14:/var/www/wajnie.net/html# systemctl restart nginx root@ip14:/var/www/wajnie.net/html# cat index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>wajnie.net - Home</title>
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/connect.css">
+    <link rel="stylesheet" href="styles/project/projects.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="snapper">
+      <!-- LANDING SECTION -->
+      <div id="particles-js">
+        <!-- particles.js container -->
+        <div class="landingPageContainer">
+          <div>
+            <span style="color: #21F7C0;">wajnie</span>
+            <div class="LandingSkills">
+              <section class="nerdy-pen">
+                <h1 class="nerdy-pen__text">
+                  <span class="txt-rotate">|</span>
+                  <span class="txt-rotate" data-period="1000" data-rotate='[ "github.com/wajnie", "wajnie#0000", "github.com/wajnie"]'></span>
+                  <span class="txt-rotate">|</span>
+                </h1>
+              </section>
+            </div>
+          </div>
+          <div class="bottomTray">
+            <a href="#2">
+              <div class="glassTray"> Down </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="2" class="aboutMeSection">
+        <div class="aboutMeSectionIndiv">
+          <div class="hidden aboutMeSectionInner">
+            <div class="aboutSectionHeading">about me</div>
+          </div>
+          <div class="aboutInfoContainer">
+            <div class="hidden2 aboutMeInfo">
+              <h1> I am wajnie </h1>
+              <!-- introduction of a
+web developer -->
+              <p> in construction... </p>
+              <p>
+              <h3 style="color:#21f7c0">some links:</h3>
+              <ul class="ProfileList"> I like simple geometry like <a style="color:#21f7c0" href="http://wajnie.net/u/2308/uDwS.html"> this one </a>. <li>
+                  <a href="https://github.com/wajnie" target="label">Github</a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener
+                            noreferrer" href="http://wajnie.net" target="label">Home</a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener
+                            noreferrer" href="http://wajnie.net/upload" target="label">File Uploader (yes, you need a password)</a>
+                </li>
+                </p>
+              </ul>
+            </div>
+            <div class="aboutImgCont  hidden3">
+              <img class="aboutImg" src="https://media.discordapp.net/attachments/565550638088323094/601530204585984008/wajnie.png?width=676&height=676" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <!--
+stats.js lib -->
+      <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+      <script src="./particle.js"></script>
+      <script src="./text.js"></script>
+      <script>
+        // window.onscroll = function () { myFunction() };
+        function myFunction() {
+          var elements;
+          var elements2;
+          var elements3;
+          var elements4;
+          var windowHeight;
+
+          function init() {
+            elements = document.querySelectorAll('.hidden');
+            elements2 = document.querySelectorAll('.hidden2');
+            elements3 = document.querySelectorAll('.hidden3');
+            elements4 = document.querySelectorAll('.hidden4');
+            windowHeight = window.innerHeight;
+          }
+
+          function checkPosition() {
+            for (var i = 0; i < elements.length; i++) {
+              var element1 = elements[i];
+              var element2 = elements2[i];
+              var element3 = elements3[i];
+              var element4 = elements4[i];
+              var positionFromTop = elements[i].getBoundingClientRect().top;
+              var positionFromTop2 = elements2[i].getBoundingClientRect().top;
+              if (positionFromTop - windowHeight <= 0) {
+                element1.classList.add('fade-in-element');
+                element1.classList.remove('hidden');
+              }
+              if (positionFromTop2 - windowHeight <= 0) {
+                element2.classList.add('fade-in-element2');
+                element2.classList.remove('hidden2');
+                element3.classList.add('fade-in-element3');
+                element3.classList.remove('hidden3');
+                element4.classList.add('fade-in-element4');
+                element4.classList.remove('hidden4');
+              }
+            }
+          }
+
+          function checkPosition2() {
+            for (var i = 0; i < elements4.length; i++) {
+              var positionFromTop4 = elements4[i].getBoundingClientRect().top;
+              if (positionFromTo4 - windowHeight <= 0) {}
+            }
+          }
+          window.addEventListener('scroll', checkPosition);
+          window.addEventListener('scroll', checkPosition2);
+          window.addEventListener('resize', init);
+          init();
+          checkPosition();
+        }
+        myFunction()
+
+        function f0() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/exp.png"
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle2")
+        }
+
+        function f1() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/vysion.jpg"
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle1");
+        }
+
+        function f2() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/ideoholics.png"
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.add("mystyle1");
+        }
+
+        function f3() {
+          const tImg = document.getElementById("CompanyImg")
+          // tImg.
+          console.log(tImg.src)
+          tImg.src = "./assets/experience/nt.jpg"
+          tImg.classList.toggle("mystyle1");
+          tImg.classList.toggle("mystyle2");
+          tImg.classList.add("mystyle1");
+        }
+      </script>
+  </body>
+</html>
